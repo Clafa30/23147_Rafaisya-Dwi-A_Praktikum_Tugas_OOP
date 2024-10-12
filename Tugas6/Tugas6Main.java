@@ -103,17 +103,17 @@ public class Tugas6Main {
     // method buat output in lagu anak ayam ke-n
     private static void Lagu() {
         String song = "";
-        int countBirds = 5;
+        int n = 5;
 
-        while (countBirds > 0) {
-            if (countBirds == 5) {
-                song += "Anak ayam turun " + countBirds + "\n";
-            } else if (countBirds == 1) {
-                song += "Anak ayam turun " + countBirds + ", mati satu tinggal induknya";
+        while (n > 0) {
+            if (n == 5) {
+                song += "Anak ayam turun " + n + "\n";
+            } else if (n == 1) {
+                song += "Anak ayam turun " + n + ", mati satu tinggal induknya";
             } else {
-                song += "Anak ayam turun " + countBirds + ", mati satu tinggal " + (countBirds - 1) + ".\n";
+                song += "Anak ayam turun " + n + ", mati satu tinggal " + (n - 1) + ".\n";
             }
-            countBirds--;
+            n--;
         }
         System.out.println("\n=========================");
         System.out.println(song);
